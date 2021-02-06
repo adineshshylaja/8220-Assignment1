@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
                 ('updated_date', models.DateTimeField(auto_now_add=True)),
                 ('return_date', models.DateTimeField(default=django.utils.timezone.now)),
                 ('Gymitem_name', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='rentals', to='gymitem.Gymitem')),
-                ('cust_name', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='rentals', to='grm.Customer')),
+                ('cust_name', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='rentals', to='grm.Gymmember')),
             ],
         ),
     ]
